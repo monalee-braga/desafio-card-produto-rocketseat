@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 13px;
+
+  width: 875px;
+  height: 498px;
+  background-color: #d9cdf7;
+  border-radius: 9.60297px;
+  margin: 0 auto;
+}
+
+.card .card-image {
+  width: 449px;
+  height: 222.96px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+.card .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 281px;
+  height: 498px;
+}
+
+.info .p1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 100%;
+  color: #271a45;
+}
+
+.info .p2 {
+  font-family: 'Crimson Pro';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  padding: 12px 0 12px 0;
+}
+
+.info .p3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #271a45;
+}
+
+.btn-add {
+  padding: 8px 16px;
+  border: 0.5px solid #271a45;
+  border-radius: 999px;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.btn-add:hover {
+  background-color: #271a45;
+  color: #d9cdf7;
+}
+
+.btn-toogle {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.card-image > img {
+  width: 449px;
+  height: 222px;
+  object-fit: cover; /*Encaixar a imagem*/
+}

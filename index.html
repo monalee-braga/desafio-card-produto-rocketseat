@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Produto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="appVue">
+      <div class="card">
+        <div class="card-image">
+          <button
+            class="btn-toogle"
+            v-if="controls.showAnimated"
+            @click="this.controls.showAnimated = !this.controls.showAnimated"
+          >
+            <img src="./assets/360.svg" alt="ícone 360" />
+          </button>
+          <button
+            class="btn-toogle"
+            v-else
+            @click="this.controls.showAnimated = !this.controls.showAnimated"
+          >
+            <img src="./assets/close.svg" alt="ícone close" />
+          </button>
+          <img
+            id="img-static"
+            v-if="controls.showAnimated"
+            src="./assets/sofa.jpg"
+            alt="imagem estática"
+          />
+          <img
+            id="img-dynamic"
+            v-else
+            src="./assets/sofa.gif"
+            alt="imagem animada"
+          />
+        </div>
+        <div class="card-info">
+          <div class="info">
+            <p class="p1">CÓDIGO: 42404</p>
+            <p class="p2">Sofá Margot II - Rosé</p>
+            <p class="p3">R$ 4.000</p>
+          </div>
+          <button class="btn-add">Adicionar à cesta</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
