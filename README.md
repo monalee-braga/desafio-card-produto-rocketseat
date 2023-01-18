@@ -1,1 +1,1 @@
-## #boraCodar - Rockseat - Desafio 2 - Card Produtos
+## #boraCodar - Rocketseat - Desafio 2 - Card Produtos
